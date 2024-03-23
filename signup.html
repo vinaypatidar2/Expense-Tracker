@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/cssfile.css">
+
+<body>
+    <div class="container">
+
+
+        <!-- <h1>Login form using HTML and CSS</h1> -->
+        <form action="php/signup.php" method="post">
+            <!-- Headings for the form -->
+            <div class="headingsContainer form_group">
+                <h2>Sign up</h2>
+                
+            </div>
+
+            <!-- Main container for all inputs -->
+            <div class="mainContainer form_group">
+
+                
+                <label for="firstname">First Name</label>
+                <input type="text" placeholder="First Name" name="firstname" required>
+
+                <label for="lastname">Last Name</label>
+                <input type="text" placeholder="Last Name" id="lastname" name="lastname" required>
+                
+                <label for="username">User Name</label>
+                <input type="text" placeholder="User Name" name="username" required>          
+
+                <label for="email">Email</label>
+		        <input type="email" placeholder="abc@gmail.com" id="email" name="email" required>
+
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="pwd">Password</label>
+                <input type="password" placeholder="Password" id="pwd" name="pwd" required>
+
+                <label for="cpwd">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="cpwd" name="cpwd" required oninput="check(this)">
+
+                <script>
+                    function check(input) {
+                      if (input.value != document.getElementById('pwd').value) {
+                        input.setCustomValidity('Passwords must match.');
+                      } else {
+                        input.setCustomValidity('');
+                      }
+                    }
+                </script>
+
+
+                <!-- Submit button -->
+                <button type="submit" class="btn">signup</button>
+
+                <!-- Login link -->
+                <p class="register">
+                    Already a member? <a href="loginfinal.html">Login here!</a>
+                </p>
+
+            </div>
+            
+</body>
+
+</html>

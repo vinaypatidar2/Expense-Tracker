@@ -1,0 +1,264 @@
+body {
+    font-family: 'Unbounded', cursive;
+    color: rgb(136, 118, 171);
+    margin: 0px;
+    height: 130vh;
+    padding: 0px;
+    /* background: url('../hi1.img'); */
+    background: url("../image/bg.jpg");
+    
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    background-position: center;
+
+
+}
+
+.left {
+    position: absolute;
+    left: 67px;
+    top: 25px;
+    display: inline-block;
+    border: 7px solid #5e7d64;
+    border-radius: 50px;
+
+}
+
+.left img {
+    width: 80px;
+    border-radius: 50%;
+
+    /* filter: invert(93%); */
+}
+
+.left div {
+    text-align: center;
+    line-height: 8px;
+    font-size: 17px;
+
+}
+
+.mid {
+    display: block;
+    width: 50%;
+    /* top: 20px; */
+    margin: 34px auto;
+    border: 2px solid rgb(11, 12, 11);
+    font-size: 20px;
+
+
+}
+
+.right {
+    position: absolute;
+    right: 34px;
+    top: 50px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+
+}
+
+.navbar {
+    display: inline-block;
+
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.navbar li a {
+    color: rgb(52, 30, 30);
+    font-size: larger;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+}
+
+.btn {
+    font-family: 'Unbounded', cursive;
+    margin: 6px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(34, 29, 29);
+}
+
+.container {
+    /* border: 3px solid #9ab9f4; */
+    font: bold;
+    margin: auto;
+    padding: 15px 20px;
+    width: 40%;
+    color: #0b4917;
+    border-radius: 3px;
+    /* background-color: #9797a7b5; */
+    margin-top: 30px;
+
+}
+
+.form_group input {
+    font-family: 'Unbounded', cursive;
+    /* font: bold; */
+    text-align: center;
+    display: inline-block;
+    width: 308px;
+    padding: 1px;
+    border: 1px solid #030303;
+    margin: 11px auto;
+    font-size: 17px;
+    border-radius: 7px;
+    /* background: #363642; */
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 25%;
+    margin: 30px auto;
+}
+
+.header {
+    /* background-color: rgb(19, 46, 70);*/
+    border: 2px solid #0a090a;
+    width: 99%;
+    margin: 10px 5px;
+    display: block;
+    border-radius: 70px;
+}
+
+.dropdown {
+    padding: 2px;
+    color: #9090a9;
+    background-color: #363642;
+    align-items: center;
+    font-size: medium;
+    font-size: 15px;
+    border-radius: 8px;
+
+    font-family: 'Unbounded', cursive;
+    text-align: center;
+    display: block;
+    border: 1px solid #030303;
+    width: 20%;
+}
+
+.hello {
+    display: flex;
+    margin: auto auto;
+
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.list {
+    color: #050505;
+    font-size: 19px;
+    margin: 22px -1px;
+}
+
+
+
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=date] {
+    width: 100%;
+    margin: 5px 0;
+    /* border-radius: 5px; */
+    padding: 8px 8px;
+    box-sizing: border-box;
+}
+
+
+
+.headingsContainer {
+    text-align: center;
+    border: none
+}
+
+.headingsContainer p {
+    color: gray;
+}
+
+.mainContainer {
+    padding: 5px;
+}
+
+
+.subcontainer {
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subcontainer a {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+span.forgotpwd a {
+    float: right;
+    color: whitesmoke;
+    padding-top: 16px;
+}
+
+.forgotpwd a {
+    color: rgb(74, 146, 235);
+}
+
+.forgotpwd a:link {
+    text-decoration: none;
+}
+
+.register {
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+.register a {
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.register a:link {
+    text-decoration: none;
+}
+
+/* Media queries for the responsiveness of the page */
+@media screen and (max-width: 600px) {
+    form {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        width: 20rem;
+    }
+}

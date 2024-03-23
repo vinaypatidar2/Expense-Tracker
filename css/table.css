@@ -1,0 +1,143 @@
+/* *{
+    font-family: 'Unbounded', cursive;
+    background-color: #f5f0f0;
+    
+} */
+body {
+
+    color: rgb(248, 237, 237);
+    margin: 0px;
+    height: 110vh;
+    padding: 0px;
+    /* background: url('web_pic.img'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.header {
+    border: 2px solid blue;
+    padding: 11px 29px;
+    padding: 2;
+    margin: 10px 10px;
+    width: 94%;
+    border-radius: 20px;
+}
+
+.left {
+    position: absolute;
+    left: 89px;
+    top: 61px;
+    padding: 3px 30px;
+    background-color: #262362;
+    display: inline-block;
+    border: 2px solid green;
+    border-radius: 30px;
+    text-decoration: none;
+    color: red;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+}
+
+.mid {
+    border: 3px solid green;
+    width: 66%;
+    margin: 21px 260px;
+    padding: 5px -1px;
+    border-radius: 50px;
+    display: inline-block;
+
+}
+
+/* .navbar{
+    display: inline-block;
+    padding: 0px 100px;
+    
+}
+.navbar li{
+    display: inline-block;
+    font-size: 18px;
+}
+.navbar li a{
+    /* color: white; */
+/* text-decoration: none;
+    padding: 0px 44px;
+} */
+.container {
+    /* border: 2px solid rgb(8, 8, 54); */
+    /* width: 60%; */
+    margin: 0px 300px;
+    margin-top: 140px;
+    padding: 33px 34px;
+    /* border-radius: 15px ; */
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 30px;
+    color: green;
+}
+
+.homelist {
+    font-size: 20px;
+    color: greenyellow;
+    margin: 6px 35px;
+}
+
+.btn {
+    padding: 4px 16px;
+    margin: 0px 295px;
+    margin-top: 33px;
+    border: none;
+    color: black;
+    /* font-weight: 100; */
+    border-radius: 12px;
+    font-size: 13px;
+    width: 128px;
+    background-color: #80816c;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(34, 29, 29);
+}
+
+/* 
+.navbar li a:hover,
+     .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(29, 6, 6);
+    } */
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container th,
+.container td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid #0d0a0a;
+    color: rgb(20, 17, 17);
+}
+
+.container th {
+    background-color: #121111;
+}
+
+.container tbody tr:nth-child(even) {
+     background-color: #f2f2f2;  
+}
+
+.container tbody tr:hover {
+    background-color: #f4c1c1;
+}
+
+.container td:last-child {
+    text-align: right;
+}

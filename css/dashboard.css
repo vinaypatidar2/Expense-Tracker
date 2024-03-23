@@ -1,0 +1,107 @@
+/* Set font family and size for all text */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+  }
+  
+  /* Style the main content area */
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+  
+  /* Style each section of the dashboard */
+  section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  /* Style the "Total Expenses" section */
+  .totals {
+    background-color: #f2f2f2;
+  }
+  
+  .totals h2 {
+    margin-top: 0;
+  }
+  
+  .totals p {
+    font-size: 2rem;
+    margin: 1rem 0 0;
+  }
+  
+  /* Style the "Expense Categories" section */
+  .categories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .categories li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .categories li::before {
+    content: "• ";
+  }
+  
+  /* Style the "Budget Progress" section */
+  .budget p {
+    margin-top: 0;
+  }
+  
+  .budget progress {
+    width: 100%;
+    height: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Style the "Recent Transactions" section */
+  .recent-transactions table {
+    width: 60%;
+    font-size: 20px;
+    /* border-collapse: collapse; */
+    
+  }
+ 
+  
+  .recent-transactions th,
+  .recent-transactions td {
+    /* font-size: 10px; */
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid #4f4848;
+    white-space: nowrap;
+  }
+  
+  .recent-transactions th {
+    background-color: #aef7a3;
+    
+  }
+  
+  .recent-transactions tbody tr:nth-child(even) {
+    background-color: #dbf176;
+  }
+  .recent-transactions thead tr {
+    background-color: #fb9c4a;
+  }
+  
+  
+  .recent-transactions tbody tr:hover {
+    background-color: #9591ff;
+  }
+  
+  .recent-transactions td:last-child {
+    text-align: center;
+  }
+  

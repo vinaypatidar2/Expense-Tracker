@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD TRANSACTION</title>
+ <!-- <link rel="stylesheet" href="css/style.css">  -->
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css"> 
+<link rel="stylesheet" href="css/navigation.css">
+
+<body>
+
+    <nav>
+        <ul>
+          <li><a href="dashboard.php">Dashboard</a></li>
+          <li><a href="transaction.html">Expenses</a></li>
+          <li><a href="stats.php">Reports</a></li>
+          <li><a href="php/category.php">Categories</a></li>
+        <!-- <li><a href="history.php">History</a></li> -->
+          <li><a href="loginfinal.html">Logout</a></li>
+        </ul>
+      </nav>
+<br><br>
+      <div class="btn1">
+        <a href="php/addbalance.php"><button>Add Balance</button></a>
+    </div>
+
+    <div class="container">
+        <h2><u>ADD EXPENSE </u></h2>
+
+        <form action="php/expense.php" method="post">
+        
+
+            <div class="form_group e">
+                <h4>Date: </h4>
+                <input type="date" name="date" id="date" placeholder="Date" required>
+            </div>
+
+            <div class="form_group e">
+                <h4>Description </h4>
+                <input type="text" name="subcategory" id="subcategory" placeholder="subcategory" required>
+            </div>
+
+            <div class="form_group e">
+                <!-- <label for="category">Choose a Category:</label> -->
+                <h4>Category: </h4>
+                <select name="category" id="category" class="dropdown" required>
+                    <option value="none" selected disabled hidden>Select</option>
+                    <option value="Food">Food</option>
+                    <option value="Educational">Educational</option>
+                    <option value="Services">Services</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Housing">Housing</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+
+            <div class="form_group e">
+                <h4>Payment Mode: </h4>
+                <select name="payment" id="payment" class="dropdown" required>
+                    <option value="none" selected disabled hidden>Select</option>
+                    <option value="Online">Online</option>
+                    <option value="Cash">Cash</option>
+
+                </select>
+            </div>
+
+
+            <div class="form_group e">
+                <h4>Amount: </h4>
+                <input type="number" name="amount" id="amount" placeholder="100.00" required>
+            </div>
+            <br>
+
+            <div class="form_group">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>
